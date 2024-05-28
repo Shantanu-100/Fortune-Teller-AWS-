@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fortune Teller</h1>
+        <form id="fortune-form">
+            <label for="question">Ask your question:</label>
+            <input type="text" id="question" name="question" placeholder="Enter your question..." required>
+            <button type="submit">Get Fortune</button>
+        </form>
+        <div id="fortune-result" class="hidden">
+            <h2>Your Fortune:</h2>
+            <p id="fortune-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
