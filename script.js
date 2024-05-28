@@ -3,7 +3,7 @@ document.getElementById('fortune-form').addEventListener('submit', async functio
     const question = document.getElementById('question').value;
 
     try {
-        const response = await fetch(`https://a2t3t8nqwd.execute-api.ap-south-1.amazonaws.com/fortune-stage/fortune?question=${encodeURIComponent(question)}`);
+        const response = await fetch(`<YOUR API GATEWAY>/API-STAGE?question=${encodeURIComponent(question)}`);
         const data = await response.json();
 
         document.getElementById('fortune-text').textContent = data.fortune;
